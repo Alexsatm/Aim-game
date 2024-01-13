@@ -79,11 +79,23 @@ function getRandomNumber(min, max){
     return Math.round(Math.random() * (max - min) + min)
 }
 
-
 const colors = ['#BC5D58', '#18FF5D', '#C1876B', '#29AB87',
 '#D0F0C0', '#4B0082', '#FF8243', '#FF8243', '#F3DA0B', '#20B2AA']
 
 function getRandomColor(){
     return colors[Math.floor(Math.random() * colors.length)]
-
 }
+
+
+//авто кликеп по кружочкам - чтобы воспользоваться нужно в конслоль вызвать эту функцию
+
+/*function winTheGame(){
+    function kill(){
+        const circle = document.querySelector('.circle')
+        if(circle){
+            circle.click()
+        }
+    }
+
+    setInterval(kill, 42)
+}*/
